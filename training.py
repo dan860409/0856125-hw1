@@ -60,6 +60,7 @@ print(train_generator.class_indices)
 print(validation_generator.class_indices)
 
 
+# train model and validate
 model = build_VGG19()
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
 print("\nGet Model !!\n")
